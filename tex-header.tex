@@ -1,0 +1,19 @@
+\documentclass{article}
+\newcommand{\name}{Guillaume Buisson}
+\newcommand{\street}{214 chemin du val de pome 06410}
+\newcommand{\citycountry}{Biot}
+\newcommand{\phone}{+33687521674}
+\newcommand{\email}{guillaume@gbuisson.com}
+\usepackage{geometry}
+\geometry{a4paper,tmargin=40mm,bmargin=30mm,lmargin=25mm,rmargin=25mm,headheight=20mm,headsep=5mm,footskip=10mm}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancyplain}
+\setlength{\parindent}{0em}
+\fancyhf{}
+\rhead{\small\name\\\street\\\citycountry\\\phone\\\\\email\\\web\\\twitter\\\github}
+\rfoot{\scriptsize{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+
+\title{Curriculum Vitae}
+\author{Guillaume Buisson}
+\date{}

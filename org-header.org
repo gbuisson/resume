@@ -1,0 +1,11 @@
+#+OPTIONS: toc:nil timestamp:nil num:nil postamble:nil
+#+TITLE: Curriculum Vitae
+#+AUTHOR: Guillaume Buisson
+#+EXPORT_EXCLUDE_TAGS: detail
+
+#+BIND: org-export-html-auto-postamble nil
+#+BIND: org-export-html-auto-preamble nil
+#+BIND: org-export-html-preamble "<h1 class='title'>Curriculum Vitae</h1><h3 class='author'>Guillaume Buisson</h3>"
+#+BIND: org-export-html-style-include-default nil
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="stylesheet.css" />

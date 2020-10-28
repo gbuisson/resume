@@ -1,0 +1,6 @@
+.auctex-auto
+*.*~
+.sass-cache*
+target
+*.log
+*.aux
