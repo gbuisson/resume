@@ -26,7 +26,7 @@
   [k header-renderer-fn]
   (cond (header? k) (header-renderer-fn (header-level k))
         (#{:li} k) "\n- "
-        (#{:p} k) "\n"
+        (#{:p} k) "\n\n"
         :else nil))
 
 (defn markdown-header [level]
