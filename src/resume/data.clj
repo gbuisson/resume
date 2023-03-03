@@ -1,39 +1,26 @@
 (ns resume.data)
 
+(defn csv [items]
+  (apply str (interpose ", " items)))
+
 (def resume
   [:body
    [:h1 "Technologies"
     [:h2 "Languages"
-     [:p (apply
-          str
-          (interpose
-           ", "
-           ["Clojure" "ClojureScript" "Lisp" "Javascript" "Python"
-            "Java" "Bash" "SQL" "HTML" "CSS"]))]]
+     [:p (csv ["Clojure" "ClojureScript" "Lisp" "Javascript" "Python"
+               "Java" "Bash" "SQL" "HTML" "CSS"])]]
     [:h2 "Other technology"
-     [:p (apply
-          str
-          (interpose
-           ", "
-           ["Onyx" "Mesos" "Marathon" "NixOS" "GuixSD"
-            "Druid" "CouchDB" "ElasticSearch" "Kibana" "Riemann" "AWS" "Docker" "docker-compose"
-            "Kafka" "Zookeeper" "Linux" "NixOS" "Git" "Maven"
-            "Leiningen" "Apache" "Nginx" "MongoDB" "PostgreSQL"
-            "Redis" "React" "EC2" "S3" "Emacs" "org mode" "Travis"
-            "OAuth2" "OIDC" "Bamboo" "Jenkins"]))]]]
+     [:p (csv ["Onyx" "Mesos" "Marathon" "NixOS" "GuixSD"
+               "Druid" "CouchDB" "ElasticSearch" "Kibana" "Riemann" "AWS" "Docker" "docker-compose"
+               "Kafka" "Zookeeper" "Linux" "NixOS" "Git" "Maven"
+               "Leiningen" "Apache" "Nginx" "MongoDB" "PostgreSQL"
+               "Redis" "React" "EC2" "S3" "Emacs" "org mode" "Travis"
+               "OAuth2" "OIDC" "Bamboo" "Jenkins"])]]]
    [:h2 "Languages"
-    [:p (apply
-         str
-         (interpose
-          ", "
-          ["English" "French" "Spanish"]))]]
+    [:p (csv ["English" "French" "Spanish"])]]
    [:h2 "Interests"
-    [:p (apply
-         str
-         (interpose
-          ", "
-          ["Traveling" "Home Theater" "Home Automation" "Functional Programming"
-           "Stream Computing" "Ant Farming"]))]]
+    [:p (csv ["Traveling" "Home Theater" "Home Automation" "Functional Programming"
+              "Stream Computing" "Roasting" "Ant Farming"])]]
    [:h1 "Talks"
     [:h2 "Fullstack Real time social media analytics with Clojure"
      [:p "Given at ClojureX, London, Dec 2015, The talk was about

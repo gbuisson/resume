@@ -11,7 +11,7 @@ Onyx, Mesos, Marathon, NixOS, GuixSD, Druid, CouchDB, ElasticSearch, Kibana, Rie
 English, French, Spanish
 ## Interests
 
-Traveling, Home Theater, Home Automation, Functional Programming, Stream Computing, Ant Farming
+Traveling, Home Theater, Home Automation, Functional Programming, Stream Computing, Roasting, Ant Farming
 # Talks
 ## Fullstack Real time social media analytics with Clojure
 
