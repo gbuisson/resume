@@ -1,0 +1,10 @@
+.auctex-auto
+*.*~
+.sass-cache*
+target
+.clj-kondo
+.lein-failures
+.lsp
+*.log
+*.aux
+*.out

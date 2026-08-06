@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Curriculum Vitae</title>
+<meta name="author" content="Guillaume Buisson" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Curriculum Vitae</h1>
+<div id="outline-container-org32d52b5" class="outline-2">
+<h2 id="org32d52b5">Profile</h2>
+<div class="outline-text-2" id="text-org32d52b5">
+<p>
+Distributed systems and platform engineering leader with deep experience in security analytics, real time data processing and cloud services. I combine hands on architecture and implementation with technical leadership, helping teams turn complex security, identity and integration requirements into reliable platform capabilities.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd0117c0" class="outline-2">
+<h2 id="orgd0117c0">Expertise</h2>
+<div class="outline-text-2" id="text-orgd0117c0">
+</div>
+<div id="outline-container-orgbe9e2cc" class="outline-3">
+<h3 id="orgbe9e2cc">Core expertise</h3>
+<div class="outline-text-3" id="text-orgbe9e2cc">
+<p>
+Distributed systems, Platform engineering, Security analytics, Real time data processing, Hands on architecture, Technical leadership, Identity and access management, API and integration platforms
+</p>
+</div>
+</div>
+<div id="outline-container-orgc6a2791" class="outline-3">
+<h3 id="orgc6a2791">Selected technologies</h3>
+<div class="outline-text-3" id="text-orgc6a2791">
+<p>
+Clojure, ClojureScript, Java, Python, JavaScript, SQL, Kafka, Elasticsearch, OpenSearch, PostgreSQL, Redis, OAuth 2.0, OpenID Connect, SAML, JWT, AWS, Docker, Linux
+</p>
+</div>
+</div>
+<div id="outline-container-orgc49778a" class="outline-3">
+<h3 id="orgc49778a">Languages</h3>
+<div class="outline-text-3" id="text-orgc49778a">
+<p>
+French, English, Spanish
+</p>
+</div>
+</div>
+<div id="outline-container-org31e0d7e" class="outline-3">
+<h3 id="org31e0d7e">Professional interests</h3>
+<div class="outline-text-3" id="text-org31e0d7e">
+<p>
+Functional programming, Stream processing, Distributed systems, Security platforms, Home automation
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgef1d7b3" class="outline-2">
+<h2 id="orgef1d7b3">Talks</h2>
+<div class="outline-text-2" id="text-orgef1d7b3">
+</div>
+<div id="outline-container-orgb508fc3" class="outline-3">
+<h3 id="orgb508fc3">Full Stack Real Time Social Media Analytics with Clojure</h3>
+<div class="outline-text-3" id="text-orgb508fc3">
+<p>
+Presented at ClojureX in London in December 2015. The talk showed how Clojure could power a pipeline that analyzed the Twitter firehose, including sentiment analysis and real time metrics.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdfed963" class="outline-3">
+<h3 id="orgdfed963">Onyx: Stream Computing for the Cloud</h3>
+<div class="outline-text-3" id="text-orgdfed963">
+<p>
+Presented at Lambda Riviera in Sophia Antipolis in March 2018. I demonstrated the Onyx stream processing library working with the Twitter Streaming API.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb1a2212" class="outline-2">
+<h2 id="orgb1a2212">Experience</h2>
+<div class="outline-text-2" id="text-orgb1a2212">
+</div>
+<div id="outline-container-org7d66921" class="outline-3">
+<h3 id="org7d66921">Senior Technical Leader, Splunk: Mar 2026 to Present</h3>
+<div class="outline-text-3" id="text-org7d66921">
+<p>
+Since joining Splunk within Cisco, I have been working on streaming detection capabilities for cloud based security analytics. I remain closely involved in architecture and implementation, helping evaluate technical options, validate complex workflows and turn emerging requirements into reliable platform capabilities.
+</p>
+
+<p>
+My work focuses on distributed systems, real time data processing and the operational foundations needed to run detection workloads reliably at scale.
+</p>
+</div>
+</div>
+<div id="outline-container-org19f4f47" class="outline-3">
+<h3 id="org19f4f47">Senior Technical Leader, Cisco XDR: Oct 2021 to Feb 2026</h3>
+<div class="outline-text-3" id="text-org19f4f47">
+<p>
+As Senior Technical Leader, I guided the evolution of the distributed services and shared platform capabilities behind Cisco XDR. I helped scale the integration architecture to support more than 100 product integrations and platform extensions across multiple product teams. It provided a common foundation for onboarding products, accessing their APIs and delivering consistent capabilities across the platform.
+</p>
+
+<p>
+I shaped architectural direction across threat intelligence services, large scale data platforms and event processing systems. My work included evolving Elasticsearch and OpenSearch based infrastructure, strengthening identity and access control patterns, and designing shared capabilities for notifications, audit logging and product integrations. I also extended reusable OAuth based onboarding patterns and helped turn integration specific requirements into capabilities shared across the wider ecosystem. Throughout this period, I remained closely involved in architecture and implementation while helping teams make technical decisions and bring complex projects into production.
+</p>
+</div>
+</div>
+<div id="outline-container-org66fd361" class="outline-3">
+<h3 id="org66fd361">Technical Leader: Jun 2020 to Oct 2021</h3>
+<div class="outline-text-3" id="text-org66fd361">
+<p>
+As Technical Leader, I moved from individual service implementation to platform level architecture across Cisco SecureX and its integration backend. I designed extensible platform capabilities for dashboards, webhooks, contextual navigation, platform observability, service health and uptime monitoring. These capabilities expanded the integration model beyond product connectivity and allowed teams to contribute consistent user facing and operational experiences.
+</p>
+
+<p>
+I designed the product onboarding and activation model, using OAuth 2.0 to replace complex manual configuration with guided flows in which products could securely configure their integrations on behalf of customers. I also designed a shared API gateway and proxy capability that centralizes access controls and enables platform applications to reuse configured product integrations across varied standard and integration specific authentication schemes. In parallel, I designed the application of the OAuth 2.0 Device Authorization Flow to unify firewall registration, account linking and SecureX integration into a single customer journey. I guided these initiatives across product and engineering boundaries, translating complex security and identity requirements into reusable platform capabilities.
+</p>
+</div>
+</div>
+<div id="outline-container-org45c770b" class="outline-3">
+<h3 id="org45c770b">Clojure Software Engineer: Feb 2016 to Jun 2020</h3>
+<div class="outline-text-3" id="text-org45c770b">
+<p>
+I helped build the data, identity and integration foundations behind the Cisco Threat Response platform, working primarily in Clojure and ClojureScript. I contributed to a large scale threat intelligence service, its shared data model and the backend responsible for integrating security products into the platform. My work included Elasticsearch based storage and search, data migrations, distributed APIs and shared contracts used across backend and frontend systems.
+</p>
+
+<p>
+I helped evolve the threat intelligence service into a secure multi tenant platform with JWT based authentication and data level access control. I also built foundational identity capabilities spanning SAML authentication, signed JWTs and OAuth 2.0 and OpenID Connect integrations. As the platform expanded, I designed and implemented an extensibility model that allowed security products to contribute investigation, enrichment, response and dashboard capabilities through common module contracts. I also created a reusable integration service for connecting external product APIs while accommodating their different configuration and authentication requirements. I later introduced event driven capabilities using Kafka and asynchronous processing, connecting threat intelligence events to downstream workflows and product integrations.
+</p>
+</div>
+</div>
+<div id="outline-container-org8ab6734" class="outline-3">
+<h3 id="org8ab6734">Full Stack Clojure Developer, Vigiglobe: 2013 to 2016</h3>
+<div class="outline-text-3" id="text-org8ab6734">
+<p>
+I designed and implemented the architecture of a real time social media analytics platform. It combined scalable stream processing, an API serving live analytics, web dashboards, and enrichment modules for sentiment analysis, tokenization and gender detection. I also built recurring billing and entitlement capabilities.
+</p>
+
+<p>
+Alongside platform delivery, I conducted hiring interviews, established performance testing and continuous delivery practices, and built customer integrations for organizations including Kantar, Sky News, TNS and Twitter.
+</p>
+</div>
+</div>
+<div id="outline-container-orge48c1e6" class="outline-3">
+<h3 id="orge48c1e6">Research and Development Software Engineer, Dolby Laboratories: 2011 to 2013</h3>
+<div class="outline-text-3" id="text-orge48c1e6">
+<p>
+I built data platforms and APIs supporting real time connected cinema experiences, including interactive preshows, digital signage and gaming. I developed operational platforms for device tracking and maintenance and helped deliver mobile web experiences connected to those services.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc06df7a" class="outline-3">
+<h3 id="orgc06df7a">Software Developer, Orange Portal: 2011</h3>
+<div class="outline-text-3" id="text-orgc06df7a">
+<p>
+I developed the new finance portal for a major French internet service provider, then contributed to a unified customer account platform and its APIs as well as targeted advertising experiences.
+</p>
+</div>
+</div>
+<div id="outline-container-orgadb96da" class="outline-3">
+<h3 id="orgadb96da">Technical Project Manager, L'Express.fr: 2010 to 2011</h3>
+<div class="outline-text-3" id="text-orgadb96da">
+<p>
+I was responsible for technical delivery across the L'Express.fr news website, spanning backend features, frontend integrations and marketing campaigns. I also advised the L'Express Emploi job board and led the migration of the main website from a Microsoft stack to a LAMP platform based on Symfony.
+</p>
+</div>
+</div>
+<div id="outline-container-org07f9a7d" class="outline-3">
+<h3 id="org07f9a7d">Research and Development Web Developer, Figaro Classifieds: 2008 to 2010</h3>
+<div class="outline-text-3" id="text-org07f9a7d">
+<p>
+I prototyped services that combined data across employment, real estate and education classified businesses. I built experimental websites and a unified candidate sourcing tool, and improved internal media planning and task tracking systems.
+</p>
+</div>
+</div>
+<div id="outline-container-org5c8d5dc" class="outline-3">
+<h3 id="org5c8d5dc">Web Developer, Linagora: 2008</h3>
+<div class="outline-text-3" id="text-org5c8d5dc">
+<p>
+I delivered websites for government organizations and developed automated deployments for Alfresco as part of an open source enterprise software company.
+</p>
+</div>
+</div>
+<div id="outline-container-org4c03664" class="outline-3">
+<h3 id="org4c03664">Lead Developer, IAC Inter Action Consultants: 2007</h3>
+<div class="outline-text-3" id="text-org4c03664">
+<p>
+I helped build Easybench, a cost comparison and optimization product for industrial customers, using Symfony and Ext JS.
+</p>
+</div>
+</div>
+<div id="outline-container-org89c098d" class="outline-3">
+<h3 id="org89c098d">Software Developer, Clever Age: 2007</h3>
+<div class="outline-text-3" id="text-org89c098d">
+<p>
+I delivered customer web projects including a news portal for seniors and the redesign of the online store for Dior, working with Symfony, eZ Publish and Java.
+</p>
+</div>
+</div>
+<div id="outline-container-org13a4ce2" class="outline-3">
+<h3 id="org13a4ce2">Web Developer Intern, Big Success: 2004 to 2007</h3>
+<div class="outline-text-3" id="text-org13a4ce2">
+<p>
+I built and administered a network of advertising agency websites, consolidating brand presentation and improving search visibility.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1d2ce08" class="outline-2">
+<h2 id="org1d2ce08">Education</h2>
+<div class="outline-text-2" id="text-org1d2ce08">
+</div>
+<div id="outline-container-org002687d" class="outline-3">
+<h3 id="org002687d">IESA, Campus Edition Numerique</h3>
+<div class="outline-text-3" id="text-org002687d">
+<p>
+Specialiste en biens de communication, 2006 to 2007
+</p>
+</div>
+</div>
+<div id="outline-container-org338eb8a" class="outline-3">
+<h3 id="org338eb8a">ETS IRIS</h3>
+<div class="outline-text-3" id="text-org338eb8a">
+<p>
+BAC+2, Computer technologies, 2004 to 2006</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Guillaume Buisson</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

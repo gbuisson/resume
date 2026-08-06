@@ -1,0 +1,104 @@
+\documentclass{article}
+\newcommand{\name}{Guillaume Buisson}
+\newcommand{\citycountry}{Biot, France}
+\newcommand{\email}{guillaume@gbuisson.com}
+\newcommand{\web}{\href{https://gbuisson.com}{gbuisson.com}}
+\newcommand{\linkedin}{\href{https://www.linkedin.com/in/gbuisson}{linkedin.com/in/gbuisson}}
+\newcommand{\github}{\href{https://github.com/gbuisson}{github.com/gbuisson}}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{a4paper,tmargin=40mm,bmargin=30mm,lmargin=25mm,rmargin=25mm,headheight=20mm,headsep=5mm,footskip=10mm}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancyplain}
+\setlength{\parindent}{0em}
+\fancyhf{}
+\rhead{\small\name\\\citycountry\\\email\\\web\\\linkedin\\\github}
+\rfoot{\scriptsize{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand\headrulewidth{0pt}
+
+\title{Curriculum Vitae}
+\author{Guillaume Buisson}
+\date{}
+\begin{document}
+\maketitle
+\section*{Profile}
+Distributed systems and platform engineering leader with deep experience in security analytics, real time data processing and cloud services. I combine hands on architecture and implementation with technical leadership, helping teams turn complex security, identity and integration requirements into reliable platform capabilities.
+
+\section*{Expertise}
+\subsection*{Core expertise}
+Distributed systems, Platform engineering, Security analytics, Real time data processing, Hands on architecture, Technical leadership, Identity and access management, API and integration platforms
+
+\subsection*{Selected technologies}
+Clojure, ClojureScript, Java, Python, JavaScript, SQL, Kafka, Elasticsearch, OpenSearch, PostgreSQL, Redis, OAuth 2.0, OpenID Connect, SAML, JWT, AWS, Docker, Linux
+
+\subsection*{Languages}
+French, English, Spanish
+
+\subsection*{Professional interests}
+Functional programming, Stream processing, Distributed systems, Security platforms, Home automation
+
+\section*{Talks}
+\subsection*{Full Stack Real Time Social Media Analytics with Clojure}
+Presented at ClojureX in London in December 2015. The talk showed how Clojure could power a pipeline that analyzed the Twitter firehose, including sentiment analysis and real time metrics.
+
+\subsection*{Onyx: Stream Computing for the Cloud}
+Presented at Lambda Riviera in Sophia Antipolis in March 2018. I demonstrated the Onyx stream processing library working with the Twitter Streaming API.
+
+\section*{Experience}
+\subsection*{Senior Technical Leader, Splunk: Mar 2026 to Present}
+Since joining Splunk within Cisco, I have been working on streaming detection capabilities for cloud based security analytics. I remain closely involved in architecture and implementation, helping evaluate technical options, validate complex workflows and turn emerging requirements into reliable platform capabilities.
+
+My work focuses on distributed systems, real time data processing and the operational foundations needed to run detection workloads reliably at scale.
+
+\subsection*{Senior Technical Leader, Cisco XDR: Oct 2021 to Feb 2026}
+As Senior Technical Leader, I guided the evolution of the distributed services and shared platform capabilities behind Cisco XDR. I helped scale the integration architecture to support more than 100 product integrations and platform extensions across multiple product teams. It provided a common foundation for onboarding products, accessing their APIs and delivering consistent capabilities across the platform.
+
+I shaped architectural direction across threat intelligence services, large scale data platforms and event processing systems. My work included evolving Elasticsearch and OpenSearch based infrastructure, strengthening identity and access control patterns, and designing shared capabilities for notifications, audit logging and product integrations. I also extended reusable OAuth based onboarding patterns and helped turn integration specific requirements into capabilities shared across the wider ecosystem. Throughout this period, I remained closely involved in architecture and implementation while helping teams make technical decisions and bring complex projects into production.
+
+\subsection*{Technical Leader: Jun 2020 to Oct 2021}
+As Technical Leader, I moved from individual service implementation to platform level architecture across Cisco SecureX and its integration backend. I designed extensible platform capabilities for dashboards, webhooks, contextual navigation, platform observability, service health and uptime monitoring. These capabilities expanded the integration model beyond product connectivity and allowed teams to contribute consistent user facing and operational experiences.
+
+I designed the product onboarding and activation model, using OAuth 2.0 to replace complex manual configuration with guided flows in which products could securely configure their integrations on behalf of customers. I also designed a shared API gateway and proxy capability that centralizes access controls and enables platform applications to reuse configured product integrations across varied standard and integration specific authentication schemes. In parallel, I designed the application of the OAuth 2.0 Device Authorization Flow to unify firewall registration, account linking and SecureX integration into a single customer journey. I guided these initiatives across product and engineering boundaries, translating complex security and identity requirements into reusable platform capabilities.
+
+\subsection*{Clojure Software Engineer: Feb 2016 to Jun 2020}
+I helped build the data, identity and integration foundations behind the Cisco Threat Response platform, working primarily in Clojure and ClojureScript. I contributed to a large scale threat intelligence service, its shared data model and the backend responsible for integrating security products into the platform. My work included Elasticsearch based storage and search, data migrations, distributed APIs and shared contracts used across backend and frontend systems.
+
+I helped evolve the threat intelligence service into a secure multi tenant platform with JWT based authentication and data level access control. I also built foundational identity capabilities spanning SAML authentication, signed JWTs and OAuth 2.0 and OpenID Connect integrations. As the platform expanded, I designed and implemented an extensibility model that allowed security products to contribute investigation, enrichment, response and dashboard capabilities through common module contracts. I also created a reusable integration service for connecting external product APIs while accommodating their different configuration and authentication requirements. I later introduced event driven capabilities using Kafka and asynchronous processing, connecting threat intelligence events to downstream workflows and product integrations.
+
+\subsection*{Full Stack Clojure Developer, Vigiglobe: 2013 to 2016}
+I designed and implemented the architecture of a real time social media analytics platform. It combined scalable stream processing, an API serving live analytics, web dashboards, and enrichment modules for sentiment analysis, tokenization and gender detection. I also built recurring billing and entitlement capabilities.
+
+Alongside platform delivery, I conducted hiring interviews, established performance testing and continuous delivery practices, and built customer integrations for organizations including Kantar, Sky News, TNS and Twitter.
+
+\subsection*{Research and Development Software Engineer, Dolby Laboratories: 2011 to 2013}
+I built data platforms and APIs supporting real time connected cinema experiences, including interactive preshows, digital signage and gaming. I developed operational platforms for device tracking and maintenance and helped deliver mobile web experiences connected to those services.
+
+\subsection*{Software Developer, Orange Portal: 2011}
+I developed the new finance portal for a major French internet service provider, then contributed to a unified customer account platform and its APIs as well as targeted advertising experiences.
+
+\subsection*{Technical Project Manager, L'Express.fr: 2010 to 2011}
+I was responsible for technical delivery across the L'Express.fr news website, spanning backend features, frontend integrations and marketing campaigns. I also advised the L'Express Emploi job board and led the migration of the main website from a Microsoft stack to a LAMP platform based on Symfony.
+
+\subsection*{Research and Development Web Developer, Figaro Classifieds: 2008 to 2010}
+I prototyped services that combined data across employment, real estate and education classified businesses. I built experimental websites and a unified candidate sourcing tool, and improved internal media planning and task tracking systems.
+
+\subsection*{Web Developer, Linagora: 2008}
+I delivered websites for government organizations and developed automated deployments for Alfresco as part of an open source enterprise software company.
+
+\subsection*{Lead Developer, IAC Inter Action Consultants: 2007}
+I helped build Easybench, a cost comparison and optimization product for industrial customers, using Symfony and Ext JS.
+
+\subsection*{Software Developer, Clever Age: 2007}
+I delivered customer web projects including a news portal for seniors and the redesign of the online store for Dior, working with Symfony, eZ Publish and Java.
+
+\subsection*{Web Developer Intern, Big Success: 2004 to 2007}
+I built and administered a network of advertising agency websites, consolidating brand presentation and improving search visibility.
+
+\section*{Education}
+\subsection*{IESA, Campus Edition Numerique}
+Specialiste en biens de communication, 2006 to 2007
+
+\subsection*{ETS IRIS}
+BAC+2, Computer technologies, 2004 to 2006
+
+\end{document}
